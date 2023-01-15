@@ -3,8 +3,8 @@ import React from "react";
 import { useState } from "react"; 
 const { Configuration, OpenAIApi } = require("openai");
 
+
 const configuration = new Configuration({
-    apiKey: "",
 });
 const openai = new OpenAIApi(configuration); 
 
@@ -36,6 +36,7 @@ export default function Chat() {
         if (confidence > 0.8) {
             // console.log(text);
             setText(speech);
+            setResult("en cours de traitement");
             sendData(speech);
 
         } else {
