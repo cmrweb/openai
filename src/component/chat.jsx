@@ -73,7 +73,7 @@ export default function Chat() {
             </div>
 
             <div className="col-8 mx-auto card text-center m-4 p-4">
-                <p>{result}</p>
+                <pre>{result}</pre>
             </div>
         </div>
     )
